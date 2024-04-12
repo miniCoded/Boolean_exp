@@ -66,6 +66,7 @@ function GetVars(exp, tokens)
 	end
 
 	local variables = {}
+	exp = string.upper(exp)
 	for i = 1, #exp, 1 do
 		local c_char = string.sub(exp, i, i)
 		local exists = false
